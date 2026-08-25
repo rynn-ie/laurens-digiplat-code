@@ -1,0 +1,60 @@
+/** 
+CSS Reference, w3School, MDN CSS Reference, cssreference.io
+**/
+
+body {
+    background-color: black;
+    }
+
+p {
+    color: green;
+    }
+
+h1 {
+    color: limegreen;
+    font-size: 400px;
+    font-family: monospace;
+    letter-spacing: -0.08em;
+    }
+
+h2 {
+    color: green;
+    font-size: 72px;
+    }
+
+a {
+    color:blue;
+    }
+
+a:hover {
+    color:red;
+    }
+
+a:active {
+    color:purple;
+    }
+
+
+.navitems {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+
+.navlink {
+    padding-right: 50px;
+    }
+
+.secret-link {
+    text-decoration: none;
+    color: green;
+}
+
+.secret-link:hover {
+    text-decoration: underline;
+    color: rgb(0, 255, 0);
+}
+
+pre {
+    color: rgb(0, 67, 0)
+}
