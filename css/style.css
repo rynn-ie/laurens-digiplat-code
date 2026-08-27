@@ -2,24 +2,61 @@
 CSS Reference, w3School, MDN CSS Reference, cssreference.io
 **/
 
-body {
-    background-color: black;
+
+/** TYPOGRAPHY ACCESSIBILITY 
+      size (font-size)
+      weight (font-weight)
+      style (font-style)
+      case (text-transform)
+      typeface (font-family)
+      leading (line-spacing)
+      tracking (letter-spacing)
+      kerning (no)
+
+      px = absolute units fixed
+      em, rem, vw/vh % = relative units, size is relavant to other elements (usually parent element, browser size, window size)
+**/
+
+/** TYPOGRAPHY RELATED TAGS **/
+
+html {
+    font-size: 16px;
+}
+
+p, h2, h3, h4, h5, article, a, li, label, em, button {
+    font-family: source-code-pro, monospace;
     }
 
 p {
     color: green;
+    font-size: 1.1rem;
+    line-height: 1.2em;
     }
-
+    
 h1 {
     color: limegreen;
-    font-size: 400px;
-    font-family: monospace;
+    font-size: 6rem;
+    font-family: source-code-pro, monospace; 
     letter-spacing: -0.08em;
+    line-height: 1em;
+    font-weight: 700px; /* BOLD */
+    margin: 20px;
+    }
+
+.page-title-type {
+    font-size: 8rem;
+    font-family: velzyland, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.1em;
+    margin: 0px 50px 70px 50px;
+    pointer-events: none;
     }
 
 h2 {
     color: green;
-    font-size: 72px;
+    font-size: 1.5rem;
+    margin: 20px;
+    font-weight: 600;
     }
 
 a {
@@ -34,17 +71,6 @@ a:active {
     color:purple;
     }
 
-
-.navitems {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    }
-
-.navlink {
-    padding-right: 50px;
-    }
-
 .secret-link {
     text-decoration: none;
     color: green;
@@ -55,6 +81,137 @@ a:active {
     color: rgb(0, 255, 0);
 }
 
+.article-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+
+.article-title-button {
+    background-color: gainsboro;
+    border-radius: 0px;
+    border-width: 1px 3px 3px 1px;
+    border-color: gray;
+    padding: 5px;
+    margin: 2px;
+    display: flex;
+}
+
+.article-title-text {
+    color:gray;
+    font-weight: 900px;
+    font-size: 1.5rem;
+}
+
+
+article {
+    font-size: 1.5rem;
+    line-height: 30px;
+    background-color: blue;
+    width: 70vw;
+    color: rgb(186, 210, 255);
+    padding: 20px;
+    box-sizing: border-box;
+}
+.myarticle {
+    background-color: blue;
+    padding: 20px;
+}
+
+.background-of-article {
+    border-style: solid;
+    border-width: 5px;
+    border-color: gainsboro;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70vw;
+}
+
+.text-in-article {
+    color: rgb(186, 210, 255);
+}
+
+li {
+    color: green
+    }
+
+label {
+    color: green
+    }
+
+button {
+    color: green;
+    background-color: rgb(1, 11, 0);
+    padding: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-color: green;
+    border-width: 1px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+    }
+
+button:hover {
+    color: rgb(203, 255, 203);
+    background-color: rgb(8, 100, 0);
+    padding: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-color: rgb(0, 255, 0);
+    border-width: 1px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+    }
+
+.button-link {
+    text-decoration: none;
+    }
+
+
+/** BACKGROUND AND POSITIONING **/
+
+
+body {
+    background-color: rgb(1, 11, 0);
+    }
+
+.dashed-line {
+    margin-top: 70px;
+    color: green;
+    border-style: dashed;
+    width: 80vw;
+}
+
+.navitems {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    z-index: 100;
+    }
+
+.navlink {
+    padding-right: 50px;
+    }
+
+.hero {
+    height: 100vh;
+    margin-bottom: 70px;
+}
+
 pre {
     color: rgb(0, 67, 0)
+}
+
+.data-center-imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+    width: 100vw;
 }
